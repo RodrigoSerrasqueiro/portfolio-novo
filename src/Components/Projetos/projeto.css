@@ -21,22 +21,25 @@
 }
 
 .card-projetos {
-    width: 360px;
+    width: 100%;
+    max-width: 360px;
     height: 485px;
     margin: 0;
 }
 
 
 .print-card {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     height: 200px;
-    border-radius: 17px 17px 0 0 ;
+    border-radius: 17px 17px 0 0;
 }
 
 .descricao-projeto {
     padding: 13px;
     padding-bottom: auto;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 360px;
 }
 
@@ -53,6 +56,7 @@
 
 .secao-tecnologias {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 5px;
     align-items: center;
     margin-top: 15px;
@@ -135,6 +139,16 @@
     .secao-card-projetos {
         flex-wrap: wrap;
         gap: 150px;
+        padding: 0 10px;
+    }
+
+    
+}
+
+
+@media (max-width: 325px) {
+    .secao-card-projetos {
+        gap: 170px;
     }
 
     

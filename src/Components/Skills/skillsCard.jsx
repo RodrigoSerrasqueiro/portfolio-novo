@@ -1,7 +1,6 @@
 import { CircleCheck } from "lucide-react";
 
 const SkillsCard = ({ imagem, descricao, tecnologias, icon }) => {
-    console.log(tecnologias)
     return (
         <article className='card-skills'>
             <div className='descricao-skills'>
